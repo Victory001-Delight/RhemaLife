@@ -1,0 +1,216 @@
+/* blog-specific styles */
+.blog-hero {
+    margin-top: 76px;
+    padding: 3rem 0 2.5rem;
+    background: linear-gradient(180deg, rgba(11, 61, 145, 0.06), rgba(11, 61, 145, 0.02));
+    text-align: center;
+}
+
+.blog-hero .hero-title {
+    font-size: 2rem;
+    color: var(--text-color, #0b1b3b);
+    margin-bottom: .5rem;
+    font-weight: 700;
+}
+
+.blog-hero .subtitle {
+    color: var(--muted, #4b5563);
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+.blog-main {
+    overflow-x: hidden;
+}
+
+.tool-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 0 15px;
+}
+
+.tool-row .search-group {
+    flex: 1;
+    min-width: 250px;
+    max-width: 500px;
+}
+
+.tool-row .search-group .form-control {
+    height: 45px;
+    border-radius: 8px;
+}
+
+.tool-row .search-group .input-group-text {
+    background: #fff;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.tool-row .search-group .form-control {
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+}
+
+.tool-row .sort-group .form-select {
+    height: 45px;
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding: 0 15px;
+}
+
+.article-card {
+    background: var(--card-bg, #fff);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow, 0 4px 12px rgba(11, 61, 145, 0.08));
+    transition: transform .28s ease, box-shadow .28s ease;
+    opacity: 0;
+    transform: translateY(18px);
+}
+
+.article-card.animated {
+    opacity: 1;
+    transform: none;
+    transition: opacity .6s ease, transform .6s cubic-bezier(.2, .9, .2, 1);
+}
+
+.article-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(11, 61, 145, 0.12);
+}
+
+.article-card .card-image img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.article-card .card-body {
+    padding: 1.25rem;
+}
+
+.article-card .meta {
+    font-size: .85rem;
+    color: var(--muted, #6b7280);
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.article-card .card-title {
+    font-size: 1.1rem;
+    margin: 0 0 .6rem;
+    color: var(--text-color, #0b1b3b);
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.article-card .excerpt {
+    color: var(--muted, #6b7280);
+    margin-bottom: 1rem;
+    font-size: .95rem;
+    line-height: 1.5;
+}
+
+.read-link {
+    color: var(--accent, #0b3d91);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+/* Responsive rules */
+@media (max-width: 991.98px) {
+    .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+    .blog-hero {
+        margin-top: 70px;
+        padding: 2.5rem 0 2rem;
+    }
+
+    .blog-hero .hero-title {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .articles-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .blog-hero .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .blog-hero .subtitle {
+        font-size: 0.95rem;
+    }
+
+    .article-card .card-image img {
+        height: 200px;
+    }
+
+    .tool-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .tool-row .search-group {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .tool-row .sort-group {
+        width: 100%;
+    }
+
+    .tool-row .sort-group .form-select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .blog-hero {
+        margin-top: 65px;
+        padding: 2rem 0 1.5rem;
+    }
+
+    .blog-hero .hero-title {
+        font-size: 1.35rem;
+    }
+
+    .tool-row {
+        margin: 1.5rem 0;
+    }
+
+    .articles-grid {
+        margin-bottom: 2rem;
+    }
+}
+
+/* small visual helpers */
+.meta,
+.read-link {
+    display: block
+}
+
+.read-link:hover {
+    text-decoration: underline
+}

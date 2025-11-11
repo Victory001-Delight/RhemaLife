@@ -1,0 +1,98 @@
+/* About page specific styles */
+.about-hero {
+    background: linear-gradient(135deg, rgba(111, 66, 193, 0.95), rgba(133, 87, 211, 0.9));
+    color: #fff;
+    padding: 6.5rem 0 4rem;
+    text-align: center;
+}
+
+.about-hero .hero-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    animation: slideInLeft 0.9s ease;
+}
+
+.about-hero .subtitle {
+    opacity: 0.95;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.about-hero .lead {
+    opacity: 0.9;
+}
+
+.about-content {
+    padding: 3rem 0 4rem;
+}
+
+.story-section {
+    margin-bottom: 2rem;
+    animation: fadeIn 0.7s ease both;
+}
+
+.section-heading {
+    font-size: 1.25rem;
+    color: var(--primary-purple);
+    margin-bottom: 0.6rem;
+}
+
+.story-section p {
+    color: #333746;
+    line-height: 1.8;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.two-columns h3 {
+    color: var(--dark-text);
+    margin-bottom: 0.35rem;
+}
+
+.mission-list {
+    margin-left: 1.25rem;
+    color: #333746;
+}
+
+.mission-list li {
+    margin-bottom: 0.6rem;
+}
+
+/* Footer reuse tweaks for about page */
+.footer-section {
+    margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .about-hero {
+        padding: 5rem 0 3rem;
+    }
+
+    .about-hero .hero-title {
+        font-size: 2rem;
+    }
+
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero {
+        padding: 4rem 0 2rem;
+    }
+
+    .about-hero .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .about-content {
+        padding: 1.5rem 0 2rem;
+    }
+}

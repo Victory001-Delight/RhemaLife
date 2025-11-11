@@ -46,3 +46,13 @@ document.querySelectorAll('.feature-card, .testimonial-card').forEach((el) => {
 document.querySelectorAll('.event-card').forEach((el) => {
     observer.observe(el);
 });
+
+// Also observe story sections on the about page and two-column blocks
+document.querySelectorAll('.story-section, .two-columns').forEach((el) => {
+    observer.observe(el);
+});
+
+// Observe blog article cards for reveal
+document.querySelectorAll('.article-card').forEach((el) => {
+    observer.observe(el);
+});

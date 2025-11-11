@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog — RhemaLife</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">Rhema</span>
+                <span class="brand-text-secondary">Life</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Media</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Live</a></li>
+                    <li class="nav-item"><a class="nav-link" href="signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="blog-hero">
+        <div class="container">
+            <h1 class="hero-title">Experiencing God's Word Daily</h1>
+            <p class="subtitle">Devotionals, testimonies, teachings and resources to strengthen your walk with God.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="blog-main">
+        <div class="container">
+            <!-- Search and Sort Bar -->
+            <div class="tool-row">
+                <div class="search-group">
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa fa-search"></i></span>
+                        <input id="blogSearch" class="form-control" placeholder="Search articles, topics or authors"
+                            aria-label="Search articles">
+                    </div>
+                </div>
+
+                <div class="sort-group">
+                    <select id="blogSort" class="form-select">
+                        <option value="newest">Sort by: Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="title-asc">Title A → Z</option>
+                        <option value="title-desc">Title Z → A</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Articles Grid -->
+            <div id="articlesGrid" class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card" data-title="Daily Devotion: Faith" data-date="2025-10-01"
+                    data-tags="devotion">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?auto=format&fit=crop&w=800&q=80"
+                            alt="Devotion">
+                    </div>
+                    <div class="card-body">
+                        <div class="meta">Oct 1, 2025 • Devotion</div>
+                        <h3 class="card-title">Daily Devotion: Faith</h3>
+                        <p class="excerpt">Start your day with a short meditation on trusting God through every season.
+                        </p>
+                        <a class="read-link" href="#">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card" data-title="Community Testimony" data-date="2025-09-18"
+                    data-tags="testimony">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+                            alt="Testimony">
+                    </div>
+                    <div class="card-body">
+                        <div class="meta">Sep 18, 2025 • Testimony</div>
+                        <h3 class="card-title">How Scripture Restored My Joy</h3>
+                        <p class="excerpt">A personal testimony about walking through healing and restoration by the
+                            Word.</p>
+                        <a class="read-link" href="#">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card" data-title="Worship Night Recap" data-date="2025-08-10" data-tags="media">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1500835556837-99ac94a94552?auto=format&fit=crop&w=800&q=80"
+                            alt="Worship">
+                    </div>
+                    <div class="card-body">
+                        <div class="meta">Aug 10, 2025 • Media</div>
+                        <h3 class="card-title">Worship Night — Moments of Encounter</h3>
+                        <p class="excerpt">Highlights and video links from our monthly worship gathering.</p>
+                        <a class="read-link" href="#">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card" data-title="Discipleship Steps" data-date="2025-07-22"
+                    data-tags="discipleship">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1508830524289-0adcbe822b40?auto=format&fit=crop&w=800&q=80"
+                            alt="Discipleship">
+                    </div>
+                    <div class="card-body">
+                        <div class="meta">Jul 22, 2025 • Discipleship</div>
+                        <h3 class="card-title">5 Practical Steps to Grow in Scripture</h3>
+                        <p class="excerpt">Simple rhythms to help you engage with God's Word every day.</p>
+                        <a class="read-link" href="#">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card" data-title="Conference Highlights" data-date="2025-06-05"
+                    data-tags="events">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80"
+                            alt="Conference">
+                    </div>
+                    <div class="card-body">
+                        <div class="meta">Jun 5, 2025 • Events</div>
+                        <h3 class="card-title">Faith Conference 2025 — Highlights</h3>
+                        <p class="excerpt">Recap from powerful sessions and teachings delivered during the conference.
+                        </p>
+                        <a class="read-link" href="#">Read More →</a>
+                    </div>
+                </article>
+
+                <!-- Article 6 -->
+                <article class="article-card" data-title="Prayer Guide" data-date="2025-05-01" data-tags="devotion">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80"
+                            alt="Prayer">
+                    </div>
+                    <div class="card-body">
+                        <div class="meta">May 1, 2025 • Devotion</div>
+                        <h3 class="card-title">A Simple Prayer Guide</h3>
+                        <p class="excerpt">Short prompts and scripture references to guide your personal prayer time.
+                        </p>
+                        <a class="read-link" href="#">Read More →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="brand-icon">▮</span>
+                        <span class="brand-name">Rhema Life</span>
+                    </div>
+                    <p class="footer-desc">Empowering believers to experience God's Word daily and grow in their faith
+                        journey.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div>
+                        <h4>Ministry</h4>
+                        <a href="#">About Us</a>
+                        <a href="#">Testimonies</a>
+                    </div>
+                    <div>
+                        <h4>Resources</h4>
+                        <a href="#">Devotions</a>
+                        <a href="#">Blog</a>
+                    </div>
+                    <div>
+                        <h4>Connect</h4>
+                        <a href="#">Contact</a>
+                        <a href="#">Partner</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Rhema Life Ministry. All rights reserved.</span>
+                <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="blog.js"></script>
+</body>
+
+</html>

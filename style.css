@@ -869,11 +869,22 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Features grid: display block on small screens */
-  .features-grid { display: block; }
-  .feature-card { margin-bottom: 1rem; }
 
-  /* Testimonials grid: display block on small screens */
-  .testimonials-grid { display: block; }
-  .testimonial-card { margin-bottom: 1rem; }
+    /* Features grid: display block on small screens */
+    .features-grid {
+        display: block;
+    }
+
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+
+    /* Testimonials grid: display block on small screens */
+    .testimonials-grid {
+        display: block;
+    }
+
+    .testimonial-card {
+        margin-bottom: 1rem;
+    }
 }
